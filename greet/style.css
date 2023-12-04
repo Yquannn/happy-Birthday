@@ -1,0 +1,154 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-color: #000000;
+}
+
+.night {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  filter: blur(0.1vmin);
+  background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 233, 255, 0.2)), repeating-linear-gradient(220deg, black 0px, black 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, black 0px, black 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, black 0px, black 19px, transparent 19px, transparent 22px), linear-gradient(90deg, #00fffa, #f0f0f0);
+} */
+/* Your existing CSS here */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+button {
+    background-color: #fff;
+    border: 0;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 10px;
+    padding: 10px;
+    transition: color .2s ease-in;
+}
+
+button:hover {
+    color: #222;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    transition: transform .5s ease-in-out;
+}
+
+.left-slide > div {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.left-slide h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+
+.right-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform .5s ease-in-out;
+}
+
+.right-slide > div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.slider-container .action-buttons button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+}
+
+.slider-container .action-buttons .down-button {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transform: translateX(-100%);
+}
+
+.slider-container .action-buttons .up-button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: translateY(-100%);
+}
+
+
+
+
+/* footer {
+    bottom: 0;
+    background-color: #222;
+	color: #fff;
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	padding: 10px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+footer i {
+	color: red;
+}
+
+footer a {
+	color: #3C97BF;
+	text-decoration: none;
+} */
+
+.navigateFlower{
+    margin-top:  5px;
+    border-radius: 10px;
+}
